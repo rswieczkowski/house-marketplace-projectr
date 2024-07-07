@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -40,7 +41,7 @@ function SignUp() {
       );
       const user = userCredential.user;
       updateProfile(auth.currentUser, {
-        dispalyName: name,
+        displayName: name,
       });
 
       const formDataCopy = { ...formData };
@@ -51,7 +52,7 @@ function SignUp() {
 
       navigate('/');
     } catch (error) {
-      console.log(error);
+      toast.error('Something went wrong!');
     }
   };
 
