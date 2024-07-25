@@ -2,7 +2,7 @@ import { BrowserRouter as Rlouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Explore from './pages/Explore';
-import ForgotPasword from './pages/ForgotPassword';
+import ForgotPassword from './pages/ForgotPassword';
 import Offers from './pages/Offers';
 import Profile from './pages/Profile';
 import SignIn from './pages/SignIn';
@@ -22,7 +22,7 @@ function App() {
           </Route>
           <Route path='/sign-in' element={<SignIn />} />
           <Route path='/sign-up' element={<SignUp />} />
-          <Route path='/forgot-password' element={<ForgotPasword />} />
+          <Route path='/forgot-password' element={<ForgotPassword />} />
         </Routes>
         <Navbar />
       </Rlouter>
