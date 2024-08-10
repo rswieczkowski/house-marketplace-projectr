@@ -7,7 +7,7 @@ function ListingItem({ listing, id, onDelete }) {
   return (
     <li className='categoryListing'>
       <Link
-        to={`/categry/${listing.type}/${id}`}
+        to={`/category/${listing.type}/${id}`}
         className='categoryListingLink'
       >
         <img
@@ -32,14 +32,14 @@ function ListingItem({ listing, id, onDelete }) {
           <div className='categoryListingInfoDiv'>
             <img src={bedIcon} alt='bed' />
             <p className='categoryListingInfoText'>
-              {listing.bedroom > 1
+              {listing.bedrooms > 1
                 ? `${listing.bedrooms} Bedrooms`
                 : '1 Bedroom'}
             </p>
             <img src={bathtubIcon} alt='bath' />
             <p className='categoryListingInfoText'>
-              {listing.bathroom > 1
-                ? `${listing.bathroom} Bathrooms`
+              {listing.bathrooms > 1
+                ? `${listing.bathrooms} Bathrooms`
                 : '1 Bathroom'}
             </p>
           </div>
