@@ -55,7 +55,11 @@ function Contact() {
               ></textarea>
             </div>
 
-            <a href={`mailto:${landlord.email}?subject=test&body=${message}`}>
+            <a
+              href={`mailto:${landlord.email}?Subject=${searchParams.get(
+                'listingName'
+              )}&body=${message}`}
+            >
               <button type='button' className='primaryButton'>
                 Send Message
               </button>
