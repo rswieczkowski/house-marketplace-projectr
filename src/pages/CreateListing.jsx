@@ -287,7 +287,7 @@ function CreateListing() {
           <div className='formButtons'>
             <button
               className={parking ? 'formButtonActive' : 'formButton'}
-              tupe='button'
+              type='button'
               id='parking'
               value={true}
               onClick={onMutate}
@@ -311,7 +311,7 @@ function CreateListing() {
           <div className='formButtons'>
             <button
               className={furnished ? 'formButtonActive' : 'formButton'}
-              tupe='button'
+              type='button'
               id='furnished'
               value={true}
               onClick={onMutate}
